@@ -1,0 +1,15 @@
+/* These are the base colours for each part of my website! */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --hero-bg:    #FAF5ED;
+  --hero-ink:   #1C130A;
+  --hero-muted: #7A6A58;
+  --saffron:    #D4601A;
+  --saffron-lt: #F07A38;
+  --dish-bg:    #100D08;
+  --nav-pill-h: 52px;
+  --nav-top:    1.5rem;
+}
+
