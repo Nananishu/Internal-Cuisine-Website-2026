@@ -46,16 +46,23 @@ img { display: block; max-width: 100%; }
   height: var(--nav-pill-h);
   transition: background 0.4s, border-color 0.4s;
 }
-.navbar.scrolled { background: rbga(20,12,5,0.85); border-color:rgba(212,96,26,0.28)}
 
 .navbar-logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.35rem;
+  font-weight: 600px;
   letter-spacing:0.1rem;
   color:var(--saffron);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
 }
 
-.navbar ul { list-style: none; display: flex; gap: 0.2rem; }
+.navbar ul { 
+  list-style: none; 
+  display: flex; 
+  gap: 0.2rem; 
+}
 
 .navbar ul li a {
   color: rgba(255,255,255,0.82);
