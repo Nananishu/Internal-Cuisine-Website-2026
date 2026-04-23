@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Annapurna Essence</title>
-  
   <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
 
@@ -26,82 +27,83 @@
   </nav>
 
   <!-- This is the left column for the headline and blurb about my website + the buttons to go to the restaurant page and the about us page -->
-  <div class="hero-left" id="heroLeft">
+  <section class="hero" id="hero">
+      <div class="hero-left" id="heroLeft">
 
-      <div class="hero-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span>Authentic Indian Cuisine</span>
-      </div>
+          <div class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>Authentic Indian Cuisine</span>
+          </div>
 
-      <h1 class="hero-headline">
-        real spice,<br>
-        <span class="accent">real soul!</span>
-      </h1>
+          <h1 class="hero-headline">
+            real spice,<br>
+            <span class="accent">real soul!</span>
+          </h1>
 
-      <p class="hero-sub">
-        Are you hungry for something deeper than a recipe?
-        Well what are you waiting for? let the flavours and 
-        stories of India's beloved dishes find their way to your table.
-      </p>
+          <p class="hero-sub">
+            Are you hungry for something deeper than a recipe?
+            Well what are you waiting for? let the flavours and 
+            stories of India's beloved dishes find their way to your table.
+          </p>
 
-       <div class="hero-actions">
-        <a href="page.html" class="btn-saffron">Our Page</a>
-        <a href="about.html" class="btn-ghost-link">Explore About Us</a>
-      </div>
+          <div class="hero-actions">
+            <a href="page.html" class="btn-saffron">Our Page</a>
+            <a href="about.html" class="btn-ghost-link">Explore About Us</a>
+          </div>
 
-      
-<!-- Right Column for the three dishes I chose to be displayed -->
-    <div class="dishes-column" id="dishesCol">
+          
+    <!-- Right Column for the three dishes I chose to be displayed -->
+        <div class="dishes-column" id="dishesCol">
 
-      <!-- Dish 1: Butter Paneer -->
-      <div class="dish-row">
-        <div class="dish-bar"></div>
-        <div class="dish-circle"><img src="IMAGES/butter paneer.png" alt="Butter Paneer" /></div>
-        <div class="dish-meta">
-          <span class="dish-name">Butter Paneer</span>
-          <span class="dish-kind">Main · Classic</span>
+          <!-- Dish 1: Butter Paneer -->
+          <div class="dish-row">
+            <div class="dish-bar"></div>
+            <div class="dish-circle"><img src="IMAGES/butter paneer.png" alt="Butter Paneer" /></div>
+            <div class="dish-meta">
+              <span class="dish-name">Butter Paneer</span>
+              <span class="dish-kind">Main · Classic</span>
+            </div>
+            <div class="dish-card">
+              <h4>Butter Paneer</h4>
+              <p>A rich North Indian classic consisting of cheese cubes in a creamy, spiced tomato sauce. It represents the indulgent, "royal" side of Indian comfort food.</p>
+              <span class="dish-tag">Main · Classic</span>
+            </div>
+          </div>
+    <!-- Dish 2: Kulfi -->
+          <div class="dish-row">
+            <div class="dish-bar"></div>
+            <div class="dish-circle"><img src="IMAGES/kulfi.png" alt="Kulfi" /></div>
+            <div class="dish-meta">
+              <span class="dish-name">Kulfi</span>
+              <span class="dish-kind">Sweet · Festive</span>
+            </div>
+            <div class="dish-card">
+              <h4>Kulfi</h4>
+              <p>A delicious traditional frozen dairy desert for hot days!</p>
+              <span class="dish-tag">Sweet · Festive</span>
+            </div>
         </div>
-        <div class="dish-card">
-          <h4>Butter Paneer</h4>
-          <p>A rich North Indian classic consisting of cheese cubes in a creamy, spiced tomato sauce. It represents the indulgent, "royal" side of Indian comfort food.</p>
-          <span class="dish-tag">Main · Classic</span>
+        <div class="dish-row">
+            <div class="dish-bar"></div>
+            <div class="dish-circle"><img src="IMAGES/idli.png" alt="Idli" /></div>
+            <div class="dish-meta">
+              <span class="dish-name">Idli</span>
+              <span class="dish-kind">Snack · Iconic</span>
+            </div>
+            <div class="dish-card">
+              <h4>Idli</h4>
+              <p>Soft steamed rice cakes, perfect for a healthy start.</p>
+              <span class="dish-tag">Breakfast · Iconic</span>
+            </div>
+          </div>
         </div>
-      </div>
-<!-- Dish 2: Kulfi -->
-      <div class="dish-row">
-        <div class="dish-bar"></div>
-        <div class="dish-circle"><img src="IMAGES/kulfi.png" alt="Kulfi" /></div>
-        <div class="dish-meta">
-          <span class="dish-name">Kulfi</span>
-          <span class="dish-kind">Sweet · Festive</span>
-        </div>
-        <div class="dish-card">
-          <h4>Kulfi</h4>
-          <p>A delicious traditional frozen dairy desert for hot days!</p>
-           <span class="dish-tag">Sweet · Festive</span>
-        </div>
-    </div>
-    <div class="dish-row">
-        <div class="dish-bar"></div>
-        <div class="dish-circle"><img src="IMAGES/idli.png" alt="Idli" /></div>
-        <div class="dish-meta">
-          <span class="dish-name">Idli</span>
-          <span class="dish-kind">Snack · Iconic</span>
-        </div>
-        <div class="dish-card">
-          <h4>Idli</h4>
-          <p>Soft steamed rice cakes, perfect for a healthy start.</p>
-          <span class="dish-tag">Breakfast · Iconic</span>
-        </div>
-      </div>
-    </div>
 
-<!-- This is my statistics bar to display quick facts and information related to Indian cuisine. -->
-    <div class="stats-bar">
-      <div class="stat-cell"><span class="stat-num">5000+</span><span class="stat-lbl">Years of Cuisine</span></div>
-      <div class="stat-cell"><span class="stat-num">28</span><span class="stat-lbl">Regional Traditions</span></div>
-      <div class="stat-cell"><span class="stat-num">1000+</span><span class="stat-lbl">Diverse Dishes</span></div>
-    </div>
+    <!-- This is my statistics bar to display quick facts and information related to Indian cuisine. -->
+        <div class="stats-bar">
+          <div class="stat-cell"><span class="stat-num">5000+</span><span class="stat-lbl">Years of Cuisine</span></div>
+          <div class="stat-cell"><span class="stat-num">28</span><span class="stat-lbl">Regional Traditions</span></div>
+          <div class="stat-cell"><span class="stat-num">1000+</span><span class="stat-lbl">Diverse Dishes</span></div>
+        </div>
   </section>
 
   <!-- These are the features, this is kind of in the bottom of the homepage and its just for introducing topics to the users. Like meet our chefs or recipes and all! :P -->
