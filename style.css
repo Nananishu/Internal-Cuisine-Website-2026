@@ -46,6 +46,11 @@ img { display: block; max-width: 100%; }
   height: var(--nav-pill-h);
   transition: background 0.4s, border-color 0.4s;
 }
+  /* Slightly lighter when hero scrolls away */
+.navbar.scrolled {
+  background: rgba(20, 12, 5, 0.85);
+  border-color: rgba(212,96,26,0.28);
+}
 
 .navbar-logo {
   font-family: 'Bebas Neue', sans-serif;
@@ -64,22 +69,22 @@ img { display: block; max-width: 100%; }
 
 .navbar ul li a {
   text-decoration: none;
-      color: rgba(255,255,255,0.82);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 6px 16px;
-      border-radius: 100px;
-      transition: background 0.2s, color 0.2s;
-    }
+  color: rgba(255,255,255,0.82);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+  transition: background 0.2s, color 0.2s;
+  }
 
-.navbar ul li a:hover, 
-.navbar ul li a.active { 
-  background: var(--saffron); 
-  color: #fff; 
-}
+  .navbar ul li a:hover, 
+  .navbar ul li a.active { 
+    background: var(--saffron); 
+    color: #fff; 
+  }
 
  /* Hamburger for mobile viewing!! */
     .hamburger {
@@ -131,3 +136,14 @@ img { display: block; max-width: 100%; }
 
       .navbar ul li a { color: rgba(255,255,255,0.85); }
   
+
+/* From here is for the hero appearance */
+.hero {
+    position: relative;
+  min-height: 100vh;
+  background: var(--hero-bg);
+  display: grid;
+  grid-template-columns: 1fr clamp(260px, 38vw, 460px);
+  overflow: hidden;
+}
+
