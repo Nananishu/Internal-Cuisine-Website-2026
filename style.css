@@ -122,3 +122,12 @@ img { display: block; max-width: 100%; }
         transform: translateX(-50%) translateY(-8px);
       }
 
+/* This is for when the user presses on the hambunger icon thingy, it opens the navlinks in a small box when the hamburger is pressed. */
+      .navbar ul.open {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .navbar ul li a { color: rgba(255,255,255,0.85); }
+  
