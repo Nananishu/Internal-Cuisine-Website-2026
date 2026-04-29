@@ -566,6 +566,107 @@
     }
     .feature-card p { color: #8a7a65; font-size: clamp(0.83rem, 1.1vw, 0.93rem); line-height: 1.7; }
 
+/* Contacts page, which has a simple two-column layout with a contact form on the left and a map on the right. The form has styled inputs and a submit button, and the map is embedded with an iframe. The section has a similar style to the hero but adapted for a more functional purpose. */
+    .contact-section {
+      background: var(--hero-bg);
+      padding: clamp(5rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+    }
+    .contact-header {
+      max-width: 620px;
+      margin-bottom: 2.5rem;
+    }
+    .contact-header h2 {
+      margin: 0 0 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 5vw, 4rem);
+      line-height: 1.05;
+      color: var(--hero-ink);
+    }
+    .contact-header p {
+      color: var(--hero-muted);
+      font-size: clamp(0.95rem, 1.2vw, 1rem);
+      line-height: 1.9;
+      max-width: 660px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .contact-card,
+    .contact-map {
+      background: #fff;
+      border-radius: 28px;
+      border: 1px solid rgba(212,96,26,0.12);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .contact-card {
+      padding: clamp(2rem, 3vw, 2.5rem);
+    }
+    .contact-card h3 {
+      margin-top: 0;
+      margin-bottom: 1.3rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.75rem, 3vw, 2.2rem);
+      color: var(--hero-ink);
+    }
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+    }
+    .contact-form label {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--hero-ink);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid rgba(28,19,10,0.12);
+      border-radius: 16px;
+      padding: 0.95rem 1rem;
+      background: #fbf6ef;
+      color: var(--hero-ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--saffron);
+      box-shadow: 0 0 0 4px rgba(212,96,26,0.08);
+    }
+    .contact-form textarea {
+      min-height: 250px;
+      resize: vertical;
+    }
+    .contact-form button {
+      width: fit-content;
+      margin-top: 0.5rem;
+    }
+    .contact-map iframe {
+      width: 100%;
+      min-height: 420px;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 980px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-map iframe { min-height: 320px; }
+    }
+    @media (max-width: 680px) {
+      .contact-section { padding: clamp(3rem, 5vw, 4rem) clamp(1rem, 4vw, 1.2rem); }
+      .contact-card { padding: 1.5rem; }
+      .contact-header h2 { font-size: clamp(2rem, 9vw, 3.2rem); }
+    }
+
     /* =============================================
        FOOTER
        ============================================= */
