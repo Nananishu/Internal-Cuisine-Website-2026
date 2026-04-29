@@ -663,6 +663,8 @@
       .dish-row:hover .dish-card {
         transform: translateX(-50%) translateY(0);
       }
+
+      /* Statistics bar becomes a simple horizontal row below the dishes, since the right-side space is gone. Its used to show overall stats about the indian cuisine and fits well at the bottom of the hero section. */
       .stats-bar {
         position: relative;
         bottom: auto; left: auto; right: auto;
@@ -671,4 +673,94 @@
       }
       .stat-cell { padding: 1rem 0.6rem; }
     }
+    .stat-cell:last-child { border-right: none; }
+    .stat-cell:nth-child(1) { animation-delay: 0.85s; }
+    .stat-cell:nth-child(2) { animation-delay: 1.0s; }
+    .stat-cell:nth-child(3) { animation-delay: 1.15s; }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.5rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--saffron);
+      line-height: 1;
+    }
+    .stat-lbl {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(0.6rem, 0.85vw, 0.7rem);
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--hero-muted);
+    }
+
+    /* Features section, which is a dark section with cards showcasing different features of the restaurant or cuisine. The cards have a hover effect that highlights them and shows a gradient line at the top. I think its a cool feature :D */
+    .features {
+      background: #111008;
+      padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+    }
+    .features-header { max-width: 500px; margin-bottom: 3.5rem; }
+
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(0.68rem, 1vw, 0.78rem);
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--saffron);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .features-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: #f0e6d0;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+    .divider {
+      width: 48px; height: 2px;
+      background: var(--saffron);
+      margin: 1.5rem 0;
+    }
+    .features-header p {
+      color: #a09080;
+      font-size: clamp(0.88rem, 1.3vw, 1rem);
+      line-height: 1.75;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(clamp(200px, 28vw, 300px), 1fr));
+      gap: 2rem;
+    }
+    .feature-card {
+      background: #1a1610;
+      border: 1px solid rgba(212,96,26,0.12);
+      border-radius: 16px;
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      transition: border-color 0.35s, transform 0.35s;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--saffron), transparent);
+      transform: scaleX(0);
+      transition: transform 0.4s;
+    }
+    .feature-card:hover { border-color: rgba(212,96,26,0.3); transform: translateY(-4px); }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-icon { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+    .feature-card h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      margin-bottom: 0.6rem;
+      color: #f0e6d0;
+    }
+    .feature-card p { color: #8a7a65; font-size: clamp(0.83rem, 1.1vw, 0.93rem); line-height: 1.7; }
+
   </style>
